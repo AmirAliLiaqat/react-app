@@ -2,31 +2,10 @@
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #b4f2e1;
-}
-
-div{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-}
-
-h1{
-    padding: 20px;
-    background-color: #ffe9c5;
-    color: #fa9191;
-    border-radius: 20px;
-}
-
-span{
-    color: #eb6383;
+    padding: 50px;
 }
