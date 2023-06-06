@@ -1,32 +1,16 @@
-import React from "react";
-import Heading from "./Heading";
-import Paragraph from "./Paragraph";
-import Order from "./Order";
+const youtuber = 'Mehar technical';
 
-function App() {
-    let currDate = new Date(2023,3,6,5);
-    currDate = currDate.getHours();
-    let greeting = '';
-    const cssStyle = {};
+const myques = 'who are you???';
 
-    if(currDate >= 1 && currDate < 12) {
-    greeting = 'Good Moring';
-    cssStyle.color = 'green';
-    } else if(currDate >= 12 && currDate < 19) {
-    greeting = 'Good Afternoon';
-    cssStyle.color = 'orange';
-    } else {
-    greeting = 'Good Night';
-    cssStyle.color = 'black';
-    }
-    
-    return(
-        <>
-            <div>
-                <h1 >Hello Sir, <span style={cssStyle}>{greeting}</span></h1>
-            </div>
-        </>
-    );
+function name() {
+    let name = 'Amir';
+    return name;
 }
 
-export default App;
+function names() {
+    let names = 'Ali';
+    return names;
+}
+
+export default youtuber;
+export {myques, name, names}
