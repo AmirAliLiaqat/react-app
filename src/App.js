@@ -2,15 +2,26 @@ import React from "react";
 import Card from "./Card";
 import CardData from "./CardData";
 
+// simple method
+// function CardDetail(val) {
+//     return(
+//         <Card imgsrc={val.imgsrc} title={val.title} sname={val.sname} link={val.link} />
+//     );
+// }
+
+// fat arrow method
+const CardDetail = (val) => {
+    return(
+        <Card imgsrc={val.imgsrc} title={val.title} sname={val.sname} link={val.link} />
+    );
+}
+
 function App() {
     return(
         <>
             <h1>List of top 5 websites in 2023</h1>
             <div className='cards'>
-            <Card imgsrc={CardData[0].imgsrc} title={CardData[0].title} sname={CardData[0].sname} link={CardData[0].link} />,
-            <Card imgsrc={CardData[1].imgsrc} title={CardData[1].title} sname={CardData[1].sname} link={CardData[1].link} />,
-            <Card imgsrc={CardData[2].imgsrc} title={CardData[2].title} sname={CardData[2].sname} link={CardData[2].link} />,
-            <Card imgsrc={CardData[3].imgsrc} title={CardData[3].title} sname={CardData[3].sname} link={CardData[3].link} />,
+                {CardData.map(CardDetail)}
             </div>
         </>
     );
