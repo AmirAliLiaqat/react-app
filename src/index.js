@@ -1,26 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// method 1
-import hello, {myques, name, names} from './App';
-// method 2
-import * as ques from './App';
+import {add, sub, div, multi} from './App';
 
 ReactDOM.render(
   <>
-    {/* method 1 */}
-    <ol>
-      <li>{hello}</li>
-      <li>{myques}</li>
-      <li>{name()}</li>
-      <li>{names()}</li>
-    </ol>
-    {/* method 2 */}
-    <ol>
-      <li>{ques.default}</li>
-      <li>{ques.myques}</li>
-      <li>{ques.name()}</li>
-      <li>{ques.names()}</li>
-    </ol>
+    <ul>
+      <li>Sum of two no is {add(30,5)}</li>
+      <li>Sub of two no is {sub(30,5)}</li>
+      <li>Div of two no is {div(10,3)}</li>
+      <li>Milti of two no is {multi(10,3)}</li>
+    </ul>
   </>,
   document.getElementById('root')
 );

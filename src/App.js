@@ -1,16 +1,19 @@
-const youtuber = 'Mehar technical';
-
-const myques = 'who are you???';
-
-function name() {
-    let name = 'Amir';
-    return name;
+function add(a, b) {
+    return a + b;
 }
 
-function names() {
-    let names = 'Ali';
-    return names;
+function sub(a, b) {
+    return a - b;
 }
 
-export default youtuber;
-export {myques, name, names}
+function div(a, b) {
+    let div = a / b;
+    div = div.toFixed(2);
+    return div;
+}
+
+function multi(a, b) {
+    return a * b;
+}
+
+export {add, sub, div, multi};
