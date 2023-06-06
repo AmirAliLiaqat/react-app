@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {add, sub, div, multi} from './App';
+import Card from './Card';
+import './index.css';
 
 ReactDOM.render(
   <>
-    <ul>
-      <li>Sum of two no is {add(30,5)}</li>
-      <li>Sub of two no is {sub(30,5)}</li>
-      <li>Div of two no is {div(10,3)}</li>
-      <li>Milti of two no is {multi(10,3)}</li>
-    </ul>
+    <Card imgsrc="https://picsum.photos/seed/picsum/200/300" title="Byte Ki Duniya" sname="Let's Do Code" link="http://byte.likesyou.org" />,
+    <Card imgsrc="https://picsum.photos/id/237/200/300" title="Mehar Herbals" sname="Heart of perfect health" link="http://meharherbals.likesyou.org" />,
+    <Card imgsrc="https://picsum.photos/200/300?grayscale" title="ByteBunch" sname="IT Solutions" link="https://bytebunch.com" />,
+    <Card imgsrc="https://picsum.photos/200/300.jpg" title="ByteBunch Blog" sname="Another Wordpress site" link="https://test.bytebunch.com" />,
   </>,
   document.getElementById('root')
 );
