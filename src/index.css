@@ -8,45 +8,24 @@
 body{
     font-family: 'Poppins', sans-serif;
     padding: 50px;
-}
-
-.cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-h1{
-    text-align: center;
+.heading_style{
     margin-bottom: 50px;
 }
 
-.card{
-    width: 22%;
-}
-
-.card__info{
-    /* border: 1px solid #ccc; */
-    padding: 20px;
-}
-
-.card img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-button{
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    background: transparent;
-    padding: 10px 20px;
-    margin-top: 10px;
+.slot_mechine{
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-button:hover{
-    background: #000;
-    color: #fff;
+.slot_inner{
+    padding: 20px;
+    text-align: center;
+}
+
+.slot_inner h3{
+    margin: 10px 0;
 }
