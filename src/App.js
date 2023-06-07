@@ -2,17 +2,9 @@ import React from "react";
 import Card from "./Card";
 import CardData from "./CardData";
 
-// simple method
-// function CardDetail(val) {
-//     return(
-//         <Card imgsrc={val.imgsrc} title={val.title} sname={val.sname} link={val.link} />
-//     );
-// }
-
-// fat arrow method
 const CardDetail = (val) => {
     return(
-        <Card imgsrc={val.imgsrc} title={val.title} sname={val.sname} link={val.link} />
+        <Card key={val.id} imgsrc={val.imgsrc} title={val.title} sname={val.sname} link={val.link} />
     );
 }
 
