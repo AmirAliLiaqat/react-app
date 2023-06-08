@@ -9,10 +9,10 @@ const App = () => {
         let newUpdateTime = new Date().toLocaleTimeString();
         setTime(newUpdateTime);
     }
+    setInterval(updateTime,1000);
     return(
         <>
             <h1>{newTime}</h1>
-            <button onClick={updateTime}>Get Time</button>
         </>
     );
 }
