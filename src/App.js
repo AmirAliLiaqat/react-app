@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 
 const App = () => {
-    const state = useState();
+    let currTime = new Date().toLocaleTimeString();
 
-    const [count, setCount] = useState(0);
+    const [newTime, setTime] = useState(currTime);
 
-    const IncNum = () => {
-        setCount(count + 1);
+    const updateTime = () => {
+        let newUpdateTime = new Date().toLocaleTimeString();
+        setTime(newUpdateTime);
     }
     return(
         <>
-            <h1>{count}</h1>
-            <button onClick={IncNum}>Click Me</button>
+            <h1>{newTime}</h1>
+            <button onClick={updateTime}>Get Time</button>
         </>
     );
 }
