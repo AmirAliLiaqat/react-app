@@ -36,19 +36,6 @@ h1{
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-input{
-    text-align: center;
-    height: 30px;
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    font-weight: 500;
-    width: 60%;
-    border-bottom: 2px solid #8566aa;
-    outline: none;
-    margin-right: 20px;
-}
-
 .newBtn{
     width: 45px;
     height: 45px;
@@ -64,79 +51,4 @@ input{
 
 .newBtn:hover{
     background: #16a085;
-}
-
-.MuiSvgIcon-root{
-    width: 2rem !important;
-    height: 2rem !important;
-}
-
-ol{
-    margin-top: 30px;
-}
-
-ol li{
-    padding-left: 0px;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 500;
-    min-height: 40px;
-    display: flex;
-    align-items: center;
-    color: #8566aa;
-    text-transform: capitalize;
-    list-style: none;
-}
-
-.todo_style{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-
-.todo_style .deleteIcon{
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #8566aa;
-    border-radius: 50%;
-    margin-right: 15px;
-    padding: 5px;
-    color: aliceblue;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-}
-
-.todo_style .deleteIcon:hover{
-    cursor: pointer;
-    background-color: crimson;
-    box-shadow: 5px 5px 15px -5px rgba(255, 0, 0, 0.5);
-}
-
-.todo_style .fa-times:hover .list_style{
-    color: crimson;
-}
-
-
-@media (max-width: 768px){
-    .center_div{
-        width: 55%;
-    }
-
-    .todo_style .fa-times{
-        margin: 0 15px 0 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    button{
-        margin-left: 5px;
-        min-height: 40px;
-        width: 40px;
-        color: #fff;
-        font-size: 30px;
-    }
 }
