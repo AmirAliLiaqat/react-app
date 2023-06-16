@@ -4,8 +4,8 @@ const Footer = () => {
     const currDate = new Date().getFullYear();
     return(
         <>
-            <div className="container-fluid bg-white text-white text-center p-3">
-                <p>Copyright © {currDate}</p>
+            <div className="container-fluid bg-light text-dark fixed-bottom text-center p-3">
+                <p className="mb-0">Copyright © {currDate}</p>
             </div>
         </>
     );

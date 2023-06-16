@@ -5,3 +5,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+input, textarea{
+    outline: none;
+}
+
+.main_note{
+    width: 500px;   
+}
+
+.add_note{
+    bottom: -15px;
+    right: 15px;
+}
+
+.note{
+    width: 300px;
+}
