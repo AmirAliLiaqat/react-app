@@ -1,15 +1,18 @@
 import React from "react";
 
-const Note = () => {
+const Note = (props) => {
+
+    const deleteNote = () => {
+        props.deleteItem(props.id);
+    }
+
     return(
         <>
-            <div className="container py-5">
-                <div className="note bg-body shadow-lg rounded p-3">
-                    <h1>Title</h1>
-                    <br />
-                    <p>this is the content</p>
-                    <button className="btn btn-danger rounded-circle float-end">-</button>
-                </div>
+            <div className="note bg-body shadow rounded d-inline-block m-2 p-3">
+                <h1>{props.title}</h1>
+                <br />
+                <p>{props.content}</p>
+                <button className="btn btn-danger rounded-circle float-end" onClick={deleteNote}>-</button>
             </div>
         </>
     );
