@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from './About';
 import Contact from './Contact';
 import Error from './Error';
+import User from './User';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About name="About"/>}/>
                 <Route path="/contact" element={<Contact/>}/>
+                <Route path="/user" element={<User/>}/>
                 <Route path="*" element={<Error/>} />
             </Routes>
         </>
