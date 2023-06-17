@@ -1,11 +1,11 @@
 import React from "react";
 import Statewise from "./Statewise/Statewise";
-import "./Statewise/Statewise.css";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
-
     return(
         <>
+            <h1>Pakistan COVID-19 Dashoard</h1>
         </>
     );
 }
