@@ -49,7 +49,7 @@ const Contact = () => {
                                                                 <textarea id="comment" rows="6" className="form-control" name="message" value={data.message} onChange={InputEvent} placeholder="Write Something"></textarea>
                                                         </div>
                                                         <div className="form-group col-sm-12 mt-3">
-                                                                <button type="submit" className="btn btn-outline-primary rounded" onClick={sendData}>Send Message</button>
+                                                                <button type="submit" className="btn btn-outline-primary rounded">Send Message</button>
                                                         </div>
                                                 </div>  
                                         </form>
