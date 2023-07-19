@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 
 const Search = () => {
-    const [img, setImg] = useState();
+    const [img, setImg] = useState('');
+    const pic = `https://source.unsplash.com/600x400?${img}`;
 
     const inputEvent = (event) => {
         const data = event.target.value;
         setImg(data);
     }
-    // https://api.unsplash.com/search/photos?query=canada
+
     return(
         <>
             <div className="bg-light mb-5 py-5"><Navbar/></div>
@@ -17,7 +18,9 @@ const Search = () => {
                     <h1>Search anything do you want...</h1>
                     <input type="text" className="form-control" onChange={inputEvent} value={img} placeholder="search anything" autoComplete="off" />
                     <div className="my-4">
-                        <img src={`https://source.unsplash.com/600x400?${img}`} alt="searching images..." />
+                        {
+                            img === '' ? null : <img src={pic} alt="searching images..." />
+                        }
                     </div>
                 </div>
             </section>
