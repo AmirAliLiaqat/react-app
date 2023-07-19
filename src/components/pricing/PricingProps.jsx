@@ -23,14 +23,6 @@ const PricingProps = [
         price: "14.99/Month",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste.",
     },
-    {
-        id: "3",
-        title: "Premium",
-        imgSrc: "imgs/startup.svg", 
-        currency: "$",
-        price: "14.99/Month",
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste.",
-    },
 ]
 
 export default PricingProps;
