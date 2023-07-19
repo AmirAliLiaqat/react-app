@@ -11,7 +11,7 @@ const About = () => {
                                 <div className="container text-center">
                                         <div className="about">
                                                 <div className="about-img-holder">
-                                                        <img src="imgs/man.png" className="about-img" alt="" />
+                                                        <img src="imgs/man.png" className="about-img animated" alt="" />
                                                 </div>
                                                 <div className="about-caption">
                                                         <p className="section-subtitle">Who Am I ?</p>
