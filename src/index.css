@@ -175,7 +175,7 @@ a {
 }
 
 a:hover {
-  color: #493f75;
+  color: #493f75 !important;
   text-decoration: none;
 }
 
