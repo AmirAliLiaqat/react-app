@@ -21,13 +21,13 @@ const Navbar = () => {
                             <NavLink to='/portfolio'>Portfolio</NavLink>
                         </li>
                         <li className="item mx-3">
-                            <NavLink to='/testmonial'>Testmonial</NavLink>
-                        </li>
-                        <li className="item mx-3">
                             <NavLink to='/blog'>Blog</NavLink>
                         </li>
                         <li className="item mx-3">
                             <NavLink to='/contact'>Contact</NavLink>
+                        </li>
+                        <li className="item mx-3">
+                            <NavLink to='/search'>🔍</NavLink>
                         </li>
                     </ul>
                     {/* <a href="javascript:void(0)" id="nav-toggle" className="hamburger hamburger--elastic">
