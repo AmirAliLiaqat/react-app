@@ -4,22 +4,27 @@ import { useLocation } from "react-router-dom";
 
 const Contact = () => {
         const location = useLocation();
-        const [data1, setData1] = useState();
-        const [data2, setData2] = useState();
-        const [data3, setData3] = useState();
+        const [data, setData] = useState({
+                fullname: "",
+                phone: "",
+                email: "",
+                message: "",
+        });
 
-        const contactData1 = (event) => {
-                setData1(event.target.value);
-        }
-        const contactData2 = (event) => {
-                setData2(event.target.value);
-        }
-        const contactData3 = (event) => {
-                setData3(event.target.value);
-        }
-        const sendData = (e) => {
+        const InputEvent = (event) => {
+                const {name, value} = event.target;
+
+                setData((preVal) => {
+                        return{
+                                ...preVal,
+                                [name]: value,
+                        }
+                })
+        } 
+
+        const formSubmit = (e) => {
                 e.preventDefault();
-                alert("Your message send successfully...");
+                alert(`My name is ${data.fullname}. My phone number is ${data.phone}. My email is ${data.email}. Here i want to say ${data.message}`);
         }
 
         return(
@@ -29,22 +34,22 @@ const Contact = () => {
                                 <div className="container text-center">
                                         <p className="section-subtitle">How can you communicate?</p>
                                         <h6 className="section-title">Contact Me</h6>
-                                        <h2>{data1}</h2>
-                                        <h2>{data2}</h2>
-                                        <h2>{data3}</h2>
-                                        <form action="" className="contact-form col-md-10 col-lg-8 m-auto">
+                                        <form className="contact-form col-md-10 col-lg-8 m-auto" onSubmit={formSubmit}>
                                                 <div className="form-row">
                                                         <div className="form-group col-sm-6">
-                                                                <input type="text" size="50" onChange={contactData1} className="form-control" placeholder="Your Name" autoComplete="off" />  
+                                                                <input type="text" size="50" className="form-control" name="fullname" value={data.fullname} onChange={InputEvent} placeholder="Your FullName" autoComplete="off" />  
                                                         </div>
                                                         <div className="form-group col-sm-6">
-                                                                <input type="email" onChange={contactData2} className="form-control" placeholder="Enter Email" autoComplete="off" />  
+                                                                <input type="number" size="50" className="form-control" name="phone" value={data.phone} onChange={InputEvent} placeholder="Your Phone" autoComplete="off" />  
+                                                        </div>
+                                                        <div className="form-group col-sm-6">
+                                                                <input type="email" className="form-control" name="email" value={data.email} onChange={InputEvent} placeholder="Enter Email" autoComplete="off" />  
                                                         </div>
                                                         <div className="form-group col-sm-12">
-                                                                <textarea name="comment" id="comment" rows="6" onChange={contactData3}  className="form-control" placeholder="Write Something"></textarea>
+                                                                <textarea id="comment" rows="6" className="form-control" name="message" value={data.message} onChange={InputEvent} placeholder="Write Something"></textarea>
                                                         </div>
                                                         <div className="form-group col-sm-12 mt-3">
-                                                                <input type="submit" value="Send Message" onClick={sendData} className="btn btn-outline-primary rounded" autoComplete="off" />
+                                                                <button type="submit" className="btn btn-outline-primary rounded" onClick={sendData}>Send Message</button>
                                                         </div>
                                                 </div>  
                                         </form>
