@@ -12,6 +12,7 @@ import Blog from "./components/Blog";
 import User from "./User";
 import Error from "./components/Error";
 import TempApp from "./projects/tempApp/TempApp";
+import TodoList from "./projects/todoList/TodoList";
 
 const App = () => {
   return(
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/contact" element={<Contact/>}>Contact</Route>
         <Route path="/search" element={<Search/>}>Search</Route>
         <Route path="/weather-app" element={<TempApp/>}>Weather App</Route>
+        <Route path="/todo-list" element={<TodoList/>}>Todo List</Route>
         <Route path="/user/:fname/:lname" element={<User/>}>User</Route>
         <Route path="*" element={<Error/>}>Error</Route>
       </Routes>

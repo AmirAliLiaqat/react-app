@@ -39,6 +39,7 @@ const Navbar = () => {
                                 </button>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item mx-0" href="/weather-app/">Weather App</a></li>
+                                    <li><a className="dropdown-item mx-0" href="/todo-list/">Todo List</a></li>
                                 </ul>
                             </div>
                         </li>
