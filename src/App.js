@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -10,6 +11,7 @@ import Search from "./components/Search";
 import Blog from "./components/Blog";
 import User from "./User";
 import Error from "./components/Error";
+import TempApp from "./projects/tempApp/TempApp";
 
 const App = () => {
   return(
@@ -22,6 +24,7 @@ const App = () => {
         <Route path="/blog" element={<Blog/>}>Blog</Route>
         <Route path="/contact" element={<Contact/>}>Contact</Route>
         <Route path="/search" element={<Search/>}>Search</Route>
+        <Route path="/weather-app" element={<TempApp/>}>Weather App</Route>
         <Route path="/user/:fname/:lname" element={<User/>}>User</Route>
         <Route path="*" element={<Error/>}>Error</Route>
       </Routes>

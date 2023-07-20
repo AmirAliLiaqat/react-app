@@ -32,6 +32,16 @@ const Navbar = () => {
                         <li className="item mx-3">
                             <NavLink to='/search' className={ uniqueClass }><i class="fa-solid fa-magnifying-glass"></i></NavLink>
                         </li>
+                        <li className="item mx-3">
+                            <div className="dropdown d-inline-block">
+                                <button className="btn text-white dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Projects
+                                </button>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item mx-0" href="/weather-app/">Weather App</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                     {/* <a href="javascript:void(0)" id="nav-toggle" className="hamburger hamburger--elastic">
                         <div className="hamburger-box">
