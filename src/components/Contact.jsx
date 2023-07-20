@@ -25,6 +25,7 @@ const Contact = () => {
         const formSubmit = (e) => {
                 e.preventDefault();
                 alert(`My name is ${data.fullname}. My phone number is ${data.phone}. My email is ${data.email}. Here i want to say ${data.message}`);
+                setData("");
         }
 
         return(
@@ -37,13 +38,13 @@ const Contact = () => {
                                         <form className="contact-form col-md-10 col-lg-8 m-auto" onSubmit={formSubmit}>
                                                 <div className="form-row">
                                                         <div className="form-group col-sm-6">
-                                                                <input type="text" size="50" className="form-control" name="fullname" value={data.fullname} onChange={InputEvent} placeholder="Your FullName" autoComplete="off" />  
+                                                                <input type="text" size="50" className="form-control" name="fullname" value={data.fullname} onChange={InputEvent} placeholder="Your FullName" autoComplete="off" required />  
                                                         </div>
                                                         <div className="form-group col-sm-6">
-                                                                <input type="number" size="50" className="form-control" name="phone" value={data.phone} onChange={InputEvent} placeholder="Your Phone" autoComplete="off" />  
+                                                                <input type="number" size="50" className="form-control" name="phone" value={data.phone} onChange={InputEvent} placeholder="Your Phone" autoComplete="off" required />  
                                                         </div>
-                                                        <div className="form-group col-sm-6">
-                                                                <input type="email" className="form-control" name="email" value={data.email} onChange={InputEvent} placeholder="Enter Email" autoComplete="off" />  
+                                                        <div className="form-group col-sm-12">
+                                                                <input type="email" className="form-control" name="email" value={data.email} onChange={InputEvent} placeholder="Enter Email" autoComplete="off" required />  
                                                         </div>
                                                         <div className="form-group col-sm-12">
                                                                 <textarea id="comment" rows="6" className="form-control" name="message" value={data.message} onChange={InputEvent} placeholder="Write Something"></textarea>
